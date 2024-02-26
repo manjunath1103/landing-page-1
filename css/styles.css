@@ -1,0 +1,268 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+
+body {
+    font-family: "roboto";
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+@media (min-width: 45em) {
+    body {
+        font-size: 1.525rem;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    line-height: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 0.6em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mr-top {
+    margin-top: 0.75em;
+}
+
+.mr-bottom {
+    margin-bottom: 1em;
+}
+
+/* Sections */
+
+nav {
+    padding: 1rem 0;
+}
+
+header,
+section {
+    padding: 3.5rem 0;
+}
+
+.action {
+    padding: 0;
+}
+
+footer {
+    padding: 1rem 0;
+}
+
+@media (min-width: 45em) {
+
+    header,
+    section {
+        padding: 6rem 0;
+    }
+
+    .action {
+        padding: 6rem 0;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+    }
+}
+
+/* Containers */
+
+.container {
+    width: min(90%, 65rem);
+    margin-inline: auto;
+}
+
+.information .container {
+    width: min(85%, 65rem);
+}
+
+.action .container {
+    width: 100%;
+}
+
+@media (min-width: 45em){
+    .information .container {
+        width: min(75%, 65rem);
+    }
+
+    .quote .container{
+        width: 60%;
+    }
+    
+    .action .container {
+        width: min(85%, 65rem);
+    }
+}
+
+/* Flexing */
+
+.split,
+.btns,
+ul {
+    display: flex;
+}
+
+/* Navbar */
+
+nav .split {
+    gap: 0.4em;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+nav ul {
+    gap: 1em;
+}
+
+/* Header */
+
+header .split {
+    flex-direction: column-reverse;
+    gap: 1em;
+}
+
+.btns {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header img {
+    max-height: 45vh;
+    min-width: 100%;
+    /* object-fit: contain; */
+}
+
+@media (min-width: 45em) {
+    header .split {
+        flex-direction: row;
+    }
+
+    header .split>* {
+        flex: 1;
+    }
+
+    header p {
+        font-size: 0.7em;
+    }
+}
+
+/* Information */
+
+.wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+figure {
+    padding: 0 1em;
+}
+
+figcaption {
+    font-size: 0.7em;
+}
+
+@media (min-width: 400px) {
+    figure {
+        width: max(150px, 20%);
+        padding: 0;
+    }
+
+    figure img {
+        aspect-ratio: 1/1;
+    }
+}
+
+/* Quote */
+
+.quote p{
+    font-style: italic;
+}
+
+/* Action */
+
+.action .split {
+    flex-direction: column;
+    gap: 1em;
+    padding: 3.5em 1.5em;
+}
+
+@media (min-width: 45em) {
+    .action .split{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5em 3.5em;
+        border-radius: 0.7em;
+    }
+}
+
+/* Footer */
+
+footer p {
+    font-size: 0.7em;
+}
+
+/* Button */
+
+button {
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 0.5em;
+    font-weight: 700;
+}
+
+.action button {
+    border: 0.2em solid #F9FAF8;
+}
+
+/* Colors */
+
+.bg-dark {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.bg-gray {
+    background-color: #E5E7EB;
+}
+
+.bg-blue {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+a {
+    color: #E5E7E8;
+}
